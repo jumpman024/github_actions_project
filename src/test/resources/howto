@@ -1,0 +1,2 @@
+gradle test --continue clean
+- a command to execute clean command even with test failures
