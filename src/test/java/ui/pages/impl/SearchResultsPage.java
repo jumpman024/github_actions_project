@@ -20,6 +20,7 @@ public class SearchResultsPage extends WebPage {
 //    @FindBy(xpath = "//div[@class='Box-sc-g0xbh4-0 bDcVHV']//h3")
 //    private List<WebElement> searchResultItems;
 
+
     private static final By SEARCH_RESULTS_ITEM_SELECTOR = By.xpath("//div[@class='Box-sc-g0xbh4-0 bDcVHV']");
 
     public SearchResultsPage(WebDriver driver) {
