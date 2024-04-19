@@ -20,7 +20,7 @@ jobs:
     permissions:
      id-token: write
      actions: write
-     contents: read
+     contents: write
      checks: write
 
     steps:
