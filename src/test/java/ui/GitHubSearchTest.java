@@ -23,6 +23,7 @@ import java.util.concurrent.TimeUnit;
 @ExtendWith({TestListener.class, AllureJunit5.class})
 public class GitHubSearchTest {
 
+
     private static final String SEARCH_PHASE = "selenium";
 
     private static WebDriver driver;
