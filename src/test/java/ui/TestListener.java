@@ -1,4 +1,4 @@
-package ui.pages;
+package ui;
 
 import io.qameta.allure.Allure;
 import org.junit.jupiter.api.extension.ExtensionContext;

@@ -1,9 +1,8 @@
-package ui.pages.components.impl;
+package ui.components.impl;
 
-import io.qameta.allure.Step;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-import ui.pages.components.WebComponent;
+import ui.components.WebComponent;
 
 public class SearchComponent extends WebComponent {
     public SearchComponent(WebElement rootElement) {

@@ -1,4 +1,4 @@
-package ui.pages.components;
+package ui.components;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;

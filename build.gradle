@@ -32,7 +32,10 @@ dependencies {
             'io.qameta.allure:allure-assertj:2.24.0',
             'io.qameta.allure:allure-rest-assured:2.24.0',
             // https://mvnrepository.com/artifact/org.aspectj/aspectjweaver
-            'org.aspectj:aspectjweaver:1.9.20.1'
+            'org.aspectj:aspectjweaver:1.9.20.1',
+//            'org.junit:junit-bom:5.10.2',
+            'org.junit.jupiter:junit-jupiter',
+            'org.junit.platform:junit-platform-launcher'
 
 
 

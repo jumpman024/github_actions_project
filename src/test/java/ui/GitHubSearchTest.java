@@ -11,9 +11,9 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import ui.pages.TestListener;
 import ui.pages.impl.HomePage;
 import ui.pages.impl.SearchResultsPage;
+import ui.entities.SearchResultItem;
 
 import java.time.Duration;
 import java.time.LocalDateTime;
@@ -24,7 +24,7 @@ import java.util.concurrent.TimeUnit;
 public class GitHubSearchTest {
 
 
-    private static final String SEARCH_PHASE = "selenium";
+    private static final String SEARCH_PHRASE = "selenium";
 
     private static WebDriver driver;
     private static WebDriverWait wait;
@@ -58,12 +58,12 @@ public class GitHubSearchTest {
         HomePage homePage = new HomePage(driver);
         SearchResultsPage searchResultsPage = new SearchResultsPage(driver);
 
-        homePage.searchComponent().performSearch(SEARCH_PHASE);
+        homePage.searchComponent().performSearch(SEARCH_PHRASE);
 //        searchResultsPage.getListOfCardNames();
 
 //        List<String> actualItems = searchResultsPage.searchResultsItemsText();
-        List<String> actualItems = List.of("something");
-        List<String> expectedItems = searchResultsPage.searchResultsItemsWithText(SEARCH_PHASE);
+        List<SearchResultItem> actualItems = searchResultsPage.searchResultsItems();
+        List<SearchResultItem> expectedItems = searchResultsPage.searchResultsItemsWithText(SEARCH_PHRASE);
         Assertions.assertEquals(expectedItems, actualItems);
 
 

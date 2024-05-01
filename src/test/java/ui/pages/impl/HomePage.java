@@ -1,15 +1,11 @@
 package ui.pages.impl;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
+import ui.components.impl.SearchComponent;
 import ui.pages.WebPage;
-import ui.pages.components.impl.SearchComponent;
-
-import java.security.Key;
 
 public class HomePage extends WebPage {
 
